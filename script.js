@@ -193,7 +193,7 @@ const loadQuiz = () => {
     clearInterval(timer);
     deselectAnswers();
     const currentQuizData = quizData[currentQuiz];
-    questionElement.innerText = `${currentQuizData.question} (5s)`;
+    questionElement.innerText = `${currentQuizData.question} (10s)`;
     a_text.innerText = currentQuizData.a;
     b_text.innerText = currentQuizData.b;
     c_text.innerText = currentQuizData.c;
@@ -202,7 +202,7 @@ const loadQuiz = () => {
 };
 
 const startTimer = () => {
-    let timeLeft = 5; // 5 seconds
+    let timeLeft = 10; // 10 seconds
     timer = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(timer);
